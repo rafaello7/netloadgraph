@@ -1,6 +1,6 @@
 <schemalist>
-    <schema path="/net/sourceforge/netloadgraph/"
-        id="net.sourceforge.netloadgraph">
+    <schema path="/org/rafaello7/netloadgraph/"
+        id="org.rafaello7.netloadgraph">
         <key name="tx-color" type="s">
             <default>'gold'</default>
             <summary>TX color</summary>

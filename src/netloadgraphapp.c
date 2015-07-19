@@ -20,7 +20,7 @@ static void netload_graph_app_init(NetloadGraphApp *app)
 
     priv = netload_graph_app_get_instance_private(NETLOAD_GRAPH_APP(app));
     priv->timerId = 0;
-    priv->settings = g_settings_new("net.sourceforge.netloadgraph");
+    priv->settings = g_settings_new("org.rafaello7.netloadgraph");
     priv->refreshPeriod = 2.0;
 }
 
@@ -50,7 +50,7 @@ static void about_activated(GSimpleAction *action,
             "program-name",     "NetLoad Graph",
             "version",          PACKAGE_VERSION,
             "copyright",        "Copyright (C) 2015 by Rafal Dabrowa",
-            "website",          "http://netloadgraph.sourceforge.net",
+            "website",          "http://rafaello7.github.io/netloadgraph/",
             "logo-icon-name",   "netloadgraph",
             "license-type",     GTK_LICENSE_GPL_2_0,
             NULL);
@@ -93,7 +93,7 @@ static void netload_graph_app_startup(GApplication *app)
             G_N_ELEMENTS(app_entries), app);
 
     builder = gtk_builder_new_from_resource(
-            "/net/sourceforge/netloadgraph/appmenu.ui");
+            "/org/rafaello7/netloadgraph/appmenu.ui");
     appmenu = G_MENU_MODEL(gtk_builder_get_object(builder, "menubar"));
     gtk_application_set_menubar(GTK_APPLICATION(app), appmenu);
     g_object_unref(builder);
@@ -180,7 +180,7 @@ NetloadGraphApp *netload_graph_app_new(void)
     NetloadGraphAppPrivate *priv;
 
     res = g_object_new (NETLOAD_GRAPH_APP_TYPE, "application-id",
-            "net.sourceforge.netloadgraph",
+            "org.rafaello7.netloadgraph",
             "flags", G_APPLICATION_FLAGS_NONE, NULL);
     priv = netload_graph_app_get_instance_private(res);
     g_settings_bind(priv->settings, "refresh-period", res,

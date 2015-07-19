@@ -33,7 +33,7 @@ static void netload_graph_win_prefs_init(NetloadGraphWinPrefs *win)
 static void netload_graph_win_prefs_class_init(NetloadGraphWinPrefsClass *class)
 {
     gtk_widget_class_set_template_from_resource(GTK_WIDGET_CLASS(class),
-            "/net/sourceforge/netloadgraph/netloadgraphwinprefs.ui");
+            "/org/rafaello7/netloadgraph/netloadgraphwinprefs.ui");
     gtk_widget_class_bind_template_child_private(GTK_WIDGET_CLASS(class),
             NetloadGraphWinPrefs, txColor);
     gtk_widget_class_bind_template_child_private(GTK_WIDGET_CLASS(class),

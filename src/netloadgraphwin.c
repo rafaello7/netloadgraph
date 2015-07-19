@@ -693,7 +693,7 @@ static void netload_graph_win_class_init(NetloadGraphWinClass *class)
     GObjectClass *oclass = G_OBJECT_CLASS(class);
 
     gtk_widget_class_set_template_from_resource(GTK_WIDGET_CLASS(class),
-            "/net/sourceforge/netloadgraph/netloadgraphwin.ui");
+            "/org/rafaello7/netloadgraph/netloadgraphwin.ui");
     gtk_widget_class_bind_template_child_private(GTK_WIDGET_CLASS (class),
             NetloadGraphWin, interfacesView);
     gtk_widget_class_bind_template_child_private(GTK_WIDGET_CLASS (class),

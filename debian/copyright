@@ -1,6 +1,6 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: netloadgraph
-Source: <http://netloadgraph.sourceforge.net>
+Source: <http://rafaello7.github.io/netloadgraph/>
 
 Files: *
 Copyright: 2015 Rafal <fatwildcat@gmail.com>

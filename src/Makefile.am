@@ -14,7 +14,7 @@ netloadgraph_CFLAGS = $(LIBGTK_CFLAGS)
 netloadgraph_LDADD = $(LIBGTK_LIBS)
 netloadgraph_LDFLAGS = -rdynamic
 
-gsettings_SCHEMAS = net.sourceforge.netloadgraph.gschema.xml
+gsettings_SCHEMAS = org.rafaello7.netloadgraph.gschema.xml
 
 @GSETTINGS_RULES@
 
