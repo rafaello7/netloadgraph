@@ -1,0 +1,12 @@
+netloadgraph (0.1.1) unstable; urgency=low
+
+  * In preferences dialog, changed "refresh period" spin button to slider
+  * Minor improvements
+
+ -- Rafal <fatwildcat@gmail.com>  Sun, 19 Jul 2015 17:15:08 +0200
+
+netloadgraph (0.1-1) unstable; urgency=low
+
+  * Initial release
+
+ -- Rafal <fatwildcat@gmail.com>  Mon, 13 Jul 2015 09:20:45 +0200

@@ -1,0 +1,13 @@
+Source: netloadgraph
+Section: utils
+Priority: optional
+Maintainer: Rafal <fatwildcat@gmail.com>
+Build-Depends: debhelper (>= 9), autotools-dev, libgtk-3-dev
+Standards-Version: 3.9.6
+Homepage: http://netloadgraph.sourceforge.net
+
+Package: netloadgraph
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Display network load on a graph
+ Displays a graph with network load. Simple but with several customization options.

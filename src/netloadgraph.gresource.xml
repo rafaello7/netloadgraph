@@ -1,0 +1,7 @@
+<gresources>
+  <gresource prefix="/net/sourceforge/netloadgraph">
+    <file preprocess="xml-stripblanks">netloadgraphwin.ui</file>
+    <file preprocess="xml-stripblanks">netloadgraphwinprefs.ui</file>
+    <file preprocess="xml-stripblanks">appmenu.ui</file>
+  </gresource>
+</gresources>

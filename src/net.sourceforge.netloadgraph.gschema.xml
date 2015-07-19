@@ -1,0 +1,127 @@
+<schemalist>
+    <schema path="/net/sourceforge/netloadgraph/"
+        id="net.sourceforge.netloadgraph">
+        <key name="tx-color" type="s">
+            <default>'gold'</default>
+            <summary>TX color</summary>
+            <description>Transmit level graph color.</description>
+        </key>
+        <key name="rx-color" type="s">
+            <default>'coral'</default>
+            <summary>RX color</summary>
+            <description>Receive level graph color.</description>
+        </key>
+        <key name="refresh-period" type="d">
+            <range min="0.09" max="100.1"/>
+            <default>2</default>
+            <summary>Refresh period</summary>
+            <description>Graph refresh period, in seconds</description>
+        </key>
+        <key name="refresh-behavior" type="s">
+            <choices>
+                <choice value='Move'/>
+                <choice value='Wrap'/>
+            </choices>
+            <default>'Move'</default>
+            <summary>Refresh behavior</summary>
+            <description>Where to plot new data at refresh.</description>
+        </key>
+        <key name="scale-type" type="s">
+            <choices>
+                <choice value='Linear'/>
+                <choice value='Logarithmic'/>
+            </choices>
+            <default>'Linear'</default>
+            <summary>Scale type</summary>
+            <description>Scale type.</description>
+        </key>
+        <key name="maximum-load" type="s">
+            <choices>
+                <choice value='1k'/>
+                <choice value='2k'/>
+                <choice value='5k'/>
+                <choice value='10k'/>
+                <choice value='20k'/>
+                <choice value='50k'/>
+                <choice value='100k'/>
+                <choice value='200k'/>
+                <choice value='500k'/>
+                <choice value='1M'/>
+                <choice value='2M'/>
+                <choice value='5M'/>
+                <choice value='10M'/>
+                <choice value='20M'/>
+                <choice value='50M'/>
+                <choice value='100M'/>
+                <choice value='200M'/>
+                <choice value='500M'/>
+                <choice value='1G'/>
+                <choice value='2G'/>
+            </choices>
+            <default>'1k'</default>
+            <summary>Maximum load value</summary>
+            <description>Maximum network load displayed on graph; number of bytes per second.</description>
+        </key>
+        <key name="auto-extend-maximum" type="b">
+            <default>true</default>
+            <summary>Automatically extend maximum</summary>
+            <description>Whether extend maximum value displayed on graph when some value exceeds current max.</description>
+        </key>
+        <key name="extendedmax-shrink-delay" type="q">
+            <range min="0" max="999"/>
+            <default>1</default>
+            <summary>Extended maximum shrink back delay</summary>
+            <description>Extended maximum shrink back delay</description>
+        </key>
+        <key name="displayed-statistics-count" type="q">
+            <range min="2" max="256"/>
+            <default>64</default>
+            <summary>Displayed statistics count</summary>
+            <description>Number of statistics included on the graph chart</description>
+        </key>
+        <key name="separator-type" type="s">
+            <choices>
+                <choice value='Circle tiny'/>
+                <choice value='Circle small'/>
+                <choice value='Circle medium'/>
+                <choice value='Circle big'/>
+                <choice value='Circle huge'/>
+                <choice value='Bar thick'/>
+                <choice value='Bar medium'/>
+                <choice value='Bar thin'/>
+                <choice value='None'/>
+            </choices>
+            <default>'Circle medium'</default>
+            <summary>Newest from oldest separator</summary>
+            <description>Newest from oldest separator</description>
+        </key>
+        <key name="gap-size" type="q">
+            <range min="0" max="128"/>
+            <default>2</default>
+            <summary>Gap between newest and oldest</summary>
+            <description>Size of gap between newest and oldest point in Wrap refresh mode</description>
+        </key>
+        <key name="interfaces-select" type="s">
+            <default>''</default>
+            <summary>Interfaces selected initially</summary>
+            <description>Interfaces selected initially</description>
+        </key>
+        <key name="interfaces-unselect" type="s">
+            <default>'lo tun* sit* ip6tnl* vboxnet*'</default>
+            <summary>Interfaces unselected initially</summary>
+            <description>Interfaces unselected initially</description>
+        </key>
+        <key name="scale-lines-min-distance" type="q">
+            <range min="15" max="1000"/>
+            <default>50</default>
+            <summary>Scale lines minimum distance</summary>
+            <description>Minimum distance between scale lines</description>
+        </key>
+        <key name="scale-lines-max" type="q">
+            <range min="0" max="200"/>
+            <default>16</default>
+            <summary>Scale lines max</summary>
+            <description>Maximum number of scale lines</description>
+        </key>
+    </schema>
+</schemalist>

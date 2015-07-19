@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=NetLoad Graph
+Comment=Display network load on a graph
+Exec=netloadgraph
+Icon=netloadgraph
+Terminal=false
+StartupNotify=true
+Categories=System
